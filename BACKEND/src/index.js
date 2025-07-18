@@ -13,6 +13,10 @@ app.use(express.json());
 // Ruta
 app.use("/api", contactRoutes);
 
+app.get("/", (req, res) => {
+  res.send("API funcionando 🚀");
+});
+
 // Server
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
