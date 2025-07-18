@@ -20,7 +20,7 @@ function ContactSection() {
 
     try {
       await axios.post("http://localhost:3001/api/contact", formData);
-      setStatusMessage("Mensaje enviado correctamente!");
+      setStatusMessage("¡Mensaje enviado correctamente!");
       setStatusType("success");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
