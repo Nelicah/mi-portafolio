@@ -157,14 +157,18 @@ function App() {
           </p>
           <div className="flex justify-center space-x-6">
             <a
-              href="https:www.github.com/Nelicah"
+              href="https://www.github.com/Nelicah"
               className="text-gray-400 hover:text-white transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Github size={24} />
             </a>
             <a
-              href="https:www.linkedin.com/in/cande-zamora-125301349"
+              href="https://www.linkedin.com/in/cande-zamora-125301349"
               className="text-gray-400 hover:text-white transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Linkedin size={24} />
             </a>
