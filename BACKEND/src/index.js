@@ -22,3 +22,6 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Servidor backend corriendo en puerto ${PORT}`);
 });
+
+//SECCIÓN DE SERVIDOR DE FICHEROS ESTÁTICOS DE REACT
+app.use(express.static(path.join(__dirname, "../public_html")));

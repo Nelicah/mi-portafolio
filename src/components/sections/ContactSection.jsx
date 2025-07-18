@@ -19,7 +19,10 @@ function ContactSection() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:3001/api/contact", formData);
+      await axios.post(
+        "https://mi-portafolio-ba6w.onrender.com/api/contact",
+        formData
+      );
       setStatusMessage("¡Mensaje enviado correctamente!");
       setStatusType("success");
       setFormData({ name: "", email: "", message: "" });
