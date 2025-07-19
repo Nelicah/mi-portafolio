@@ -93,6 +93,7 @@ function App() {
       image: project7,
       tech: ["React", "Node.js", "MySQL", "Express", "SASS"],
       github: "https://github.com/Nelicah/Proyecto-molon-2.0.git",
+      demo: "https://proyecto-molon-2-0-sgwe.onrender.com/",
     },
   ];
 
