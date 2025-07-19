@@ -21,7 +21,7 @@ function AboutSection() {
               <div className="bg-gray-800 p-8 rounded-lg">
                 <div className="flex items-center mb-6">
                   <User className="text-blue-400 mr-3" size={24} />
-                  <h3 className="text-2xl font-bold">Mi Historia</h3>
+                  <h3 className="text-2xl font-bold">Mi historia</h3>
                 </div>
                 <p className="text-gray-300 mb-6 leading-relaxed">
                   Soy una desarrolladora Full Stack cumpliendo el sueño de
