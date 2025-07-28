@@ -11,12 +11,15 @@ function ContactSection() {
 
   const [statusMessage, setStatusMessage] = useState(""); // estado para mostrar mensaje
   const [statusType, setStatusType] = useState(""); // "success" o "error"
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true); //comienza el envío
+    setStatusMessage(""); //limpia mensaje anteriores
 
     try {
       await axios.post(
@@ -30,6 +33,8 @@ function ContactSection() {
       console.error("Error al enviar mensaje:", error);
       setStatusMessage("Hubo un problema al enviar el mensaje.");
       setStatusType("error");
+    } finally {
+      setIsLoading(false); //termina el envío
     }
   };
   return (
@@ -79,6 +84,7 @@ function ContactSection() {
                   type="text"
                   placeholder="Nombre"
                   className="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:border-blue-400 focus:outline-none transition-colors"
+                  required
                 />
                 <input
                   name="email"
@@ -87,6 +93,7 @@ function ContactSection() {
                   type="email"
                   placeholder="Email"
                   className="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:border-blue-400 focus:outline-none transition-colors"
+                  required
                 />
                 <textarea
                   name="message"
@@ -95,19 +102,25 @@ function ContactSection() {
                   placeholder="Mensaje"
                   rows="5"
                   className="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg focus:border-blue-400 focus:outline-none transition-colors"
+                  required
                 />
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-500 to-purple-600 py-3 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
+                  disabled={isLoading}
+                  className={`w-full py-3 rounded-lg transition-all duration-300 transform hover:scale-105 ${
+                    isLoading
+                      ? "bg-gray-600 cursor-not-allowed"
+                      : "bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"
+                  }`}
                 >
-                  Enviar Mensaje
+                  {isLoading ? "Enviando mensaje..." : "Enviar Mensaje"}
                 </button>
               </form>
-              {/* Aquí mostramos el mensaje */}
+              {/* mensaje de estado */}
               {statusMessage && (
                 <p
                   style={{
-                    color: statusType === "success" ? "green" : "red",
+                    color: statusType === "success" ? "lightgreen" : "salmon",
                     marginTop: "1rem",
                     fontWeight: "bold",
                   }}
