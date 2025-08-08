@@ -7,8 +7,7 @@ import project2 from "../images/buscador-animes.png";
 import project3 from "../images/harry-potter.png";
 import project4 from "../images/the-simpsons-logo.png";
 import project5 from "../images/screenshot.png";
-import project6 from "../images/proyecto-molon.png";
-import project7 from "../images/proyecto-molon2.png";
+import project6 from "../images/proyecto-molon2.png";
 
 import HeroSection from "./sections/HeroSection";
 import AboutSection from "./sections/AboutSection";
@@ -81,7 +80,7 @@ function App() {
       title: "Proyecto Molón (en grupo)",
       description:
         "Aplicación web para crear tarjetas sobre proyectos personales con API propia integrada",
-      image: project7,
+      image: project6,
       tech: ["React", "Node.js", "MySQL", "Express", "SASS"],
       github: "https://github.com/Nelicah/Proyecto-molon-2.0.git",
       demo: "https://proyecto-molon-2-0-sgwe.onrender.com/",
