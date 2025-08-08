@@ -80,15 +80,6 @@ function App() {
     {
       title: "Proyecto Molón (en grupo)",
       description:
-        "Aplicación web para crear tarjetas sobre proyectos personales",
-      image: project6,
-      tech: ["React", "Node.js", "HTML", "SASS"],
-      github: "https://github.com/Nelicah/Proyecto-molon.git",
-      demo: "https://nelicah.github.io/Proyecto-molon/",
-    },
-    {
-      title: "Proyecto Molón 2.0 (en grupo)",
-      description:
         "Aplicación web para crear tarjetas sobre proyectos personales con API propia integrada",
       image: project7,
       tech: ["React", "Node.js", "MySQL", "Express", "SASS"],

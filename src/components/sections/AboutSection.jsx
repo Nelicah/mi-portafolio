@@ -43,9 +43,7 @@ function AboutSection() {
                   <Code className="text-blue-400 mr-3" size={20} />
                   <h4 className="text-xl font-semibold">Desarrollo Frontend</h4>
                 </div>
-                <p className="text-gray-300">
-                  React, JavaScript, Tailwind CSS, Next.js
-                </p>
+                <p className="text-gray-300">React, JavaScript, Tailwind CSS</p>
               </div>
 
               <div className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-colors">
