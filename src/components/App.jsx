@@ -77,7 +77,7 @@ function App() {
       github: "https://github.com/Nelicah/juego-piedra-papel-tijeras.git",
     },
     {
-      title: "Proyecto Molón (en grupo)",
+      title: "Proyecto Molón 2.0 (en grupo)",
       description:
         "Aplicación web para crear tarjetas sobre proyectos personales con API propia integrada",
       image: project6,
