@@ -7,7 +7,8 @@ import project2 from "../images/buscador-animes.png";
 import project3 from "../images/harry-potter.png";
 import project4 from "../images/the-simpsons-logo.png";
 import project5 from "../images/screenshot.png";
-import project6 from "../images/proyecto-molon2.png";
+import project6 from "../images/agenda_contactos1.png";
+import project7 from "../images/proyecto-molon2.png";
 
 import HeroSection from "./sections/HeroSection";
 import AboutSection from "./sections/AboutSection";
@@ -58,7 +59,7 @@ function App() {
       description:
         "Aplicación web sobre los personajes del mundo de Harry Potter, con buscador y filtros y página de detalles del personaje.",
       image: project3,
-      tech: ["React", "Node.js", "Express", "SASS"],
+      tech: ["React", "Node.js", "SASS"],
       github: "https://github.com/Nelicah/mi-web-sobre-Harry-Potter",
       demo: "https://nelicah.github.io/mi-web-sobre-Harry-Potter/",
     },
@@ -77,10 +78,18 @@ function App() {
       github: "https://github.com/Nelicah/juego-piedra-papel-tijeras.git",
     },
     {
+      title: "Agenda de contactos",
+      description: `Agenda de contactos creada para demostrar mis conocimientos con React para un ejercicio técnico de "roleplay"`,
+      image: project6,
+      tech: ["React", "Node.js", "SASS"],
+      github: "https://github.com/Nelicah/agenda-de-contactos.git",
+      demo: "https://nelicah.github.io/agenda-de-contactos/",
+    },
+    {
       title: "Proyecto Molón 2.0 (en grupo)",
       description:
         "Aplicación web para crear tarjetas sobre proyectos personales con API propia integrada",
-      image: project6,
+      image: project7,
       tech: ["React", "Node.js", "MySQL", "Express", "SASS"],
       github: "https://github.com/Nelicah/Proyecto-molon-2.0.git",
       demo: "https://proyecto-molon-2-0-sgwe.onrender.com/",
