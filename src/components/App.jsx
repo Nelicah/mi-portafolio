@@ -8,7 +8,8 @@ import project3 from "../images/harry-potter.png";
 import project4 from "../images/the-simpsons-logo.png";
 import project5 from "../images/screenshot.png";
 import project6 from "../images/agenda_contactos1.png";
-import project7 from "../images/proyecto-molon2.png";
+import project7 from "../images/dragon-ball1.png";
+import project8 from "../images/proyecto-molon2.png";
 
 import HeroSection from "./sections/HeroSection";
 import AboutSection from "./sections/AboutSection";
@@ -86,10 +87,18 @@ function App() {
       demo: "https://nelicah.github.io/agenda-de-contactos/",
     },
     {
+      title: "Dragon Ball Universe",
+      description: `Web interactiva sobre el universo de Dragon Ball para demostrar mis conocimientos con React para un ejercicio técnico de "roleplay"`,
+      image: project7,
+      tech: ["React", "Node.js", "SASS"],
+      github: "https://github.com/Nelicah/dragon-ball-universe",
+      demo: "https://nelicah.github.io/dragon-ball-universe/",
+    },
+    {
       title: "Proyecto Molón 2.0 (en grupo)",
       description:
         "Aplicación web para crear tarjetas sobre proyectos personales con API propia integrada",
-      image: project7,
+      image: project8,
       tech: ["React", "Node.js", "MySQL", "Express", "SASS"],
       github: "https://github.com/Nelicah/Proyecto-molon-2.0.git",
       demo: "https://proyecto-molon-2-0-sgwe.onrender.com/",
