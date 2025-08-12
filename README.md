@@ -25,6 +25,7 @@ Además de mostrar mis proyectos y experiencia, incluye un sistema de contacto t
 ## 📬 Contacto
 
 💼 [LinkedIn](www.linkedin.com/in/cande-zamora-125301349)
+
 📧 candezmr2@gmail.com
 
 ---
