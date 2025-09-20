@@ -1,5 +1,4 @@
 import "../styles/tailwind.css";
-import { useState, useEffect } from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 import project1 from "../images/anonymous-proxy.png";
@@ -16,18 +15,9 @@ import AboutSection from "./sections/AboutSection";
 import SkillsSection from "./sections/SkillsSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import ContactSection from "./sections/ContactSection";
+import Navbar from "./sections/NavBar";
 
 function App() {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   const skills = [
     { name: "React", level: 40, color: "bg-blue-500" },
     { name: "JavaScript", level: 30, color: "bg-blue-400" },
@@ -114,39 +104,7 @@ function App() {
 
   return (
     <div className="bg-gray-900 text-white min-h-screen">
-      {/* Navigation */}
-      <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isScrolled
-            ? "bg-gray-900/95 backdrop-blur-sm shadow-lg"
-            : "bg-transparent"
-        }`}
-      >
-        <div className="max-w-6xl mx-auto px-4 py-4">
-          <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Nelicah
-            </h1>
-            <div className="hidden md:flex space-x-8">
-              {[
-                "Inicio",
-                "Sobre mí",
-                "Habilidades",
-                "Proyectos",
-                "Contacto",
-              ].map((item, index) => (
-                <a
-                  key={index}
-                  href={`#${item.toLowerCase().replace(" ", "-")}`}
-                  className="hover:text-blue-400 transition-colors cursor-pointer"
-                >
-                  {item}
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       <HeroSection scrollToSection={scrollToSection} />
 
