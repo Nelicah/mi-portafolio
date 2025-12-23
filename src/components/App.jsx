@@ -1,14 +1,16 @@
 import "../styles/tailwind.css";
 import { Github, Linkedin, Mail } from "lucide-react";
 
-import project1 from "../images/anonymous-proxy.png";
-import project2 from "../images/buscador-animes.png";
-import project3 from "../images/harry-potter.png";
-import project4 from "../images/the-simpsons-logo.png";
-import project5 from "../images/screenshot.png";
-import project6 from "../images/agenda_contactos1.png";
-import project7 from "../images/dragon-ball1.png";
-import project8 from "../images/proyecto-molon2.png";
+import project1 from "../images/ivanani_web.png";
+import project2 from "../images/task-manager.png";
+import project3 from "../images/anonymous-proxy.png";
+import project4 from "../images/buscador-animes.png";
+import project5 from "../images/harry-potter.png";
+import project6 from "../images/the-simpsons-logo.png";
+import project7 from "../images/screenshot.png";
+import project8 from "../images/agenda_contactos1.png";
+import project9 from "../images/dragon-ball1.png";
+import project10 from "../images/proyecto-molon2.png";
 
 import HeroSection from "./sections/HeroSection";
 import AboutSection from "./sections/AboutSection";
@@ -29,9 +31,25 @@ function App() {
 
   const projects = [
     {
+      title: "Ivanani",
+      description: "página web animada para la empresa Immersive Creatures",
+      image: project1,
+      tech: ["HTML", "CSS", "JavaScript"],
+      demo: "https://ivananirobot.blogspot.com/p/blog-page_3.html",
+      web: "https://immersivecreatures.com/",
+    },
+    {
+      title: "Task Manager",
+      description: "pequeña app para registrar tareas",
+      image: project2,
+      tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      github: "https://github.com/Nelicah/task-manager",
+      demo: "https://nelicah-task-manager.zeabur.app/",
+    },
+    {
       title: "Anonymous Proxy",
       description: "Mi primera web hecho con maquetación",
-      image: project1,
+      image: project3,
       tech: ["HTML", "SASS", "Node.js"],
       github: "https://github.com/Nelicah/Anonymous-proxy",
       demo: "https://nelicah.github.io/Anonymous-proxy/",
@@ -40,7 +58,7 @@ function App() {
       title: "Buscador animes",
       description:
         "Aplicación web para buscar animes y añadir a una lista los animes favoritos",
-      image: project2,
+      image: project4,
       tech: ["HTML", "SASS", "JavaScript", "Node.js"],
       github: "https://github.com/Nelicah/Buscador-animes",
       demo: "https://nelicah.github.io/Buscador-animes/",
@@ -49,7 +67,7 @@ function App() {
       title: "Harry Potter",
       description:
         "Aplicación web sobre los personajes del mundo de Harry Potter, con buscador y filtros y página de detalles del personaje.",
-      image: project3,
+      image: project5,
       tech: ["React", "Node.js", "SASS"],
       github: "https://github.com/Nelicah/mi-web-sobre-Harry-Potter",
       demo: "https://nelicah.github.io/mi-web-sobre-Harry-Potter/",
@@ -57,21 +75,21 @@ function App() {
     {
       title: "API Rest Simpsons",
       description: "API sobre frases de Los Simpsons",
-      image: project4,
+      image: project6,
       tech: ["JavaScript", "Node.js", "Express", "MySQL"],
       github: "https://github.com/Nelicah/API-rest-Simpson.git",
     },
     {
       title: "Piedra, papel o tijeras",
       description: "pequeño juego mítico hecho con JavaScript",
-      image: project5,
+      image: project7,
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Nelicah/juego-piedra-papel-tijeras.git",
     },
     {
       title: "Agenda de contactos",
       description: `Agenda de contactos creada para demostrar mis conocimientos con React para un ejercicio técnico de "roleplay"`,
-      image: project6,
+      image: project8,
       tech: ["React", "Node.js", "SASS"],
       github: "https://github.com/Nelicah/agenda-de-contactos.git",
       demo: "https://nelicah.github.io/agenda-de-contactos/",
@@ -79,7 +97,7 @@ function App() {
     {
       title: "Dragon Ball Universe",
       description: `Web interactiva sobre el universo de Dragon Ball para demostrar mis conocimientos con React para un ejercicio técnico de "roleplay"`,
-      image: project7,
+      image: project9,
       tech: ["React", "Node.js", "SASS"],
       github: "https://github.com/Nelicah/dragon-ball-universe",
       demo: "https://nelicah.github.io/dragon-ball-universe/",
@@ -88,7 +106,7 @@ function App() {
       title: "Proyecto Molón 2.0 (en grupo)",
       description:
         "Aplicación web para crear tarjetas sobre proyectos personales con API propia integrada",
-      image: project8,
+      image: project10,
       tech: ["React", "Node.js", "MySQL", "Express", "SASS"],
       github: "https://github.com/Nelicah/Proyecto-molon-2.0.git",
       demo: "https://proyecto-molon-2-0-sgwe.onrender.com/",

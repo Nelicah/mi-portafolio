@@ -1,4 +1,4 @@
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, Link } from "lucide-react";
 
 const ProjectCard = ({ project }) => (
   <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
@@ -24,20 +24,37 @@ const ProjectCard = ({ project }) => (
         ))}
       </div>
       <div className="flex gap-4">
-        <a
-          href={project.github}
-          className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
-        >
-          <Github size={16} />
-          Código
-        </a>
+        {project.github && (
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+          >
+            <Github size={16} />
+            Código
+          </a>
+        )}
         {project.demo && (
           <a
             href={project.demo}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
           >
             <ExternalLink size={16} />
             Demo
+          </a>
+        )}
+        {project.web && (
+          <a
+            href={project.web}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+          >
+            <Link size={16} />
+            Web de la empresa
           </a>
         )}
       </div>
