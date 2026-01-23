@@ -1,5 +1,4 @@
 import SkillBar from "../items/SkillBar";
-import { PawPrint, Shirt } from "lucide-react";
 
 function SkillsSection({ skills }) {
   return (
