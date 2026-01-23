@@ -21,12 +21,14 @@ import Navbar from "./sections/NavBar";
 
 function App() {
   const skills = [
+    { name: "CSS/Tailwind", level: 70, color: "bg-blue-400" },
     { name: "React", level: 40, color: "bg-blue-500" },
-    { name: "JavaScript", level: 30, color: "bg-blue-400" },
-    { name: "Node.js", level: 30, color: "bg-blue-700" },
-    { name: "CSS/Tailwind", level: 50, color: "bg-purple-500" },
-    { name: "SQL", level: 40, color: "bg-pink-500" },
-    { name: "HTML", level: 60, color: "bg-pink-400" },
+    { name: "SQL", level: 50, color: "bg-blue-600" },
+    { name: "JavaScript", level: 50, color: "bg-yellow-400" },
+    { name: "HTML", level: 80, color: "bg-orange-400" },
+    { name: "Node.js", level: 30, color: "bg-green-700" },
+    { name: "GSAP", level: 50, color: "bg-green-400" },
+    { name: "PHP", level: 40, color: "bg-purple-400" },
   ];
 
   const projects = [

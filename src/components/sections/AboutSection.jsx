@@ -25,10 +25,9 @@ function AboutSection() {
                 </div>
                 <p className="text-gray-300 mb-6 leading-relaxed">
                   Soy una desarrolladora Full Stack cumpliendo el sueño de
-                  trabajar en el mundo Tech. Actualmente como Full Stack, sólo
-                  cuento con la experiencia que he adquirido en el bootcamp que
-                  he realizado pero aprendo rápido y me adapto a todo tipo de
-                  situaciones.
+                  trabajar en el mundo Tech. Actualmente cuento con experiencia
+                  en proyectos tech remunerados, personales y los realizados en
+                  el bootcamp.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
                   Me considero una persona proactiva, adaptativa, polivalente y
@@ -43,7 +42,9 @@ function AboutSection() {
                   <Code className="text-blue-400 mr-3" size={20} />
                   <h4 className="text-xl font-semibold">Desarrollo Frontend</h4>
                 </div>
-                <p className="text-gray-300">React, JavaScript, Tailwind CSS</p>
+                <p className="text-gray-300">
+                  React, JavaScript, Tailwind CSS, GSAP
+                </p>
               </div>
 
               <div className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-colors">
@@ -51,7 +52,7 @@ function AboutSection() {
                   <Zap className="text-purple-400 mr-3" size={20} />
                   <h4 className="text-xl font-semibold">Desarrollo Backend</h4>
                 </div>
-                <p className="text-gray-300">Node.js, Express, MySQL</p>
+                <p className="text-gray-300">Node.js, Express, MySQL, PHP</p>
               </div>
             </div>
           </div>

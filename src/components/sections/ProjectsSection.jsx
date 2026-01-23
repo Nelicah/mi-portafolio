@@ -12,8 +12,7 @@ function ProjectsSection({ projects }) {
               </span>
             </h2>
             <p className="text-gray-400 text-lg">
-              Algunos de mis trabajos más destacados y otros en colaboración con
-              mis compañeras del bootcamp
+              Algunos de mis trabajos más destacados
             </p>
           </div>
 
