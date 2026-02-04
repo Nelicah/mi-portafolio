@@ -22,10 +22,7 @@ function ContactSection() {
     setStatusMessage(""); //limpia mensaje anteriores
 
     try {
-      await axios.post(
-        "https://mi-portafolio-api.onrender.com/api/contact",
-        formData
-      );
+      await axios.post("https://formspree.io/f/mjgonloa", formData);
       setStatusMessage("¡Mensaje enviado correctamente!");
       setStatusType("success");
       setFormData({ name: "", email: "", message: "" });
