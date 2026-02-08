@@ -69,7 +69,7 @@ function AboutSection() {
                   <h4 className="text-xl font-semibold">Herramientas y entorno</h4>
                 </div>
                 <p className="text-gray-300">
-                  Git, GitHub, VS Code, IntelliJ, DevTools, Terminal, Jest, Postman, XAMPP, Apache
+                  Git, GitHub, VS Code, IntelliJ, DevTools, Terminal, Jest, Postman, Vite, XAMPP, Apache
                 </p>
               </div>
             </div>

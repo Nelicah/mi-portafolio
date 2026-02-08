@@ -35,6 +35,7 @@ import {
   SiNextdotjs,
   SiXampp,
   SiApache,
+  SiVite,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { FaJava } from "react-icons/fa";
@@ -204,6 +205,13 @@ function App() {
       color: "text-red-500",
       description: "Servidor web para despliegue y configuración de proyectos",
     },
+    {
+      name: "Vite",
+      icon: SiVite,
+      color: "text-purple-400",
+      description:
+        "Bundler rápido para proyectos React con HMR y build optimizado",
+    },
   ];
 
   const learningSkills = [
@@ -286,7 +294,16 @@ function App() {
       description:
         "Primera web con maquetación avanzada traducida desde diseño en Zeplin. Implementé layout responsive con Flexbox y CSS Grid, preprocesamiento modular con SCSS usando variables para gestión centralizada, y animaciones CSS fluidas para mejorar la experiencia de usuario sin sacrificar rendimiento.",
       image: project3,
-      tech: ["HTML", "Sass", "Node.js", "Flexbox", "CSS Grid", "Git", "GitHub"],
+      tech: [
+        "HTML",
+        "Sass",
+        "Node.js",
+        "Flexbox",
+        "CSS Grid",
+        "Git",
+        "GitHub",
+        "Vite",
+      ],
       github: "https://github.com/Nelicah/Anonymous-proxy",
       demo: "https://nelicah.github.io/Anonymous-proxy/",
     },
@@ -312,7 +329,7 @@ function App() {
       description:
         "Aplicación React para explorar personajes de la saga con búsqueda y filtros múltiples. Implementé filtrado por casa de Hogwarts, estado de vida y categoría (estudiante/staff), con visualización detallada al hacer clic. Por iniciativa propia, añadí sistema de colores temáticos para cada casa (Gryffindor, Slytherin, Hufflepuff, Ravenclaw), mejorando la experiencia visual más allá del diseño inicial propuesto.",
       image: project5,
-      tech: ["React", "Node.js", "Sass", "Git", "GitHub"],
+      tech: ["React", "Node.js", "Sass", "Git", "GitHub", "Vite"],
       github: "https://github.com/Nelicah/mi-web-sobre-Harry-Potter",
       demo: "https://nelicah.github.io/mi-web-sobre-Harry-Potter/",
     },
@@ -346,7 +363,15 @@ function App() {
       description:
         "Aplicación React para gestión de contactos. Implementé búsqueda que normaliza tildes, sistema de favoritos con sincronización entre listas, y persistencia mediante Local Storage. Enfoque en componentización y separación de responsabilidades.",
       image: project8,
-      tech: ["React", "Node.js", "SASS", "Vite", "Local Storage", "Git"],
+      tech: [
+        "React",
+        "Node.js",
+        "SASS",
+        "Vite",
+        "Local Storage",
+        "Git",
+        "GitHub",
+      ],
       github: "https://github.com/Nelicah/agenda-de-contactos.git",
       demo: "https://nelicah.github.io/agenda-de-contactos/",
     },
@@ -362,6 +387,7 @@ function App() {
         "Fetch API",
         "lucide-react",
         "Git",
+        "Vite",
       ],
       github: "https://github.com/Nelicah/dragon-ball-universe",
       demo: "https://nelicah.github.io/dragon-ball-universe/",
@@ -380,6 +406,7 @@ function App() {
         "EJS",
         "Git",
         "GitHub",
+        "Vite",
       ],
       github: "https://github.com/Nelicah/Proyecto-molon-2.0.git",
       demo: "https://proyecto-molon-2-0-sgwe.onrender.com/",
