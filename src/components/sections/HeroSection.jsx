@@ -31,10 +31,7 @@ function HeroSection({ scrollToSection }) {
             <br />
             <span className="text-white">Full Stack</span>
           </h2>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Junior
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
             <button
               onClick={() => scrollToSection("proyectos")}
               className="bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
