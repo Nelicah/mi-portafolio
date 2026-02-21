@@ -273,7 +273,7 @@ function App() {
     {
       title: "Task Manager",
       description:
-        "Aplicación para gestión de tareas con CRUD completo. Backend en PHP con MySQL usando PDO y prepared statements para prevenir inyecciones SQL. Incluye filtros por estado y prioridad, búsqueda, estadísticas en tiempo real y notificaciones toast. Diseño responsive con CSS3 puro. Desplegada en producción en Zeabur.",
+        "Aplicación Full Stack para gestión de tareas con autenticación de usuarios. Backend PHP + MySQL con PDO y prepared statements. Sistema de login obligatorio, registro, sesiones PHP, contraseñas hasheadas y perfiles separados (cada usuario ve solo sus tareas). CRUD completo, filtros por estado/prioridad, búsqueda, estadísticas en tiempo real, notificaciones toast. Diseño responsive CSS3 puro. Desplegada en producción en Zeabur.",
       image: project2,
       tech: [
         "HTML",
