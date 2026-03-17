@@ -51,6 +51,7 @@ import project8 from "../images/agenda_contactos1.png";
 import project9 from "../images/dragon-ball1.png";
 import project10 from "../images/proyecto-molon2.png";
 import project11 from "../images/catalogo_peliculas.png";
+import project12 from "../images/login_nutrium.png";
 
 import HeroSection from "./sections/HeroSection";
 import AboutSection from "./sections/AboutSection";
@@ -269,6 +270,24 @@ function App() {
       ],
       demo: "https://ivananirobot.blogspot.com/p/blog-page_3.html",
       web: "https://immersivecreatures.com/",
+    },
+    {
+      title: "Nutrium Platform",
+      description:
+        "Plataforma HealthTech de matching con IA que conecta pacientes y nutricionistas. Frontend Developer trabajando con metodología Agile y Scrum en proyecto colaborativo. Autenticación JWT con Context API y custom hooks. Servicios HTTP centralizados (api.ts) para API REST (Node.js) y microservicio IA (FastAPI + OpenRouter). Gestión estado con Context API, localStorage, sessionStorage y React Router. Sistema fallback en cascada (IA → Backend → error). Perfiles duales con edición, formularios dinámicos, matching visual con porcentaje, verificación nutricionistas, notificaciones y gestión citas. Arquitectura escalable, mobile-first, Docker. Validado en Demo Day por Igrowker ISA.",
+      image: project12,
+      tech: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "Node.js",
+        "Docker",
+        "Postman",
+        "Git",
+        "GitHub",
+      ],
+      github: "https://github.com/Nelicah/nutrium",
     },
     {
       title: "Task Manager",
