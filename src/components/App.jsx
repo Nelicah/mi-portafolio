@@ -491,7 +491,7 @@ function App() {
           <footer className="bg-gray-900 py-8 px-4">
             <div className="max-w-6xl mx-auto text-center">
               <p className="text-gray-400 mb-4">
-                © 2025 Nelicah. Todos los derechos reservados.
+                © 2026 Nelicah. Todos los derechos reservados.
               </p>
               <div className="flex justify-center space-x-6">
                 <a
