@@ -213,15 +213,18 @@ function App() {
       description:
         "Bundler rápido para proyectos React con HMR y build optimizado",
     },
+    {
+      name: "Docker",
+      icon: SiDocker,
+      color: "text-blue-400",
+      description: "Contenedores y entornos",
+    },
   ];
 
   const learningSkills = [
     { name: "React Native", icon: SiReact, color: "text-cyan-400" },
-    { name: "Java", icon: FaJava, color: "text-red-500" },
     { name: "Python", icon: SiPython, color: "text-[#3776AB]" },
-    { name: "Docker", icon: SiDocker, color: "text-blue-400" },
     { name: "MongoDB", icon: SiMongodb, color: "text-green-500" },
-    { name: "TypeScript", icon: SiTypescript, color: "text-blue-500" },
     { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-300" },
     { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
   ];
