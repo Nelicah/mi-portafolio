@@ -300,7 +300,6 @@ function App() {
         "React",
         "Tailwind CSS",
         "Node.js",
-        "SASS",
         "Fetch API",
         "lucide-react",
         "Git",
