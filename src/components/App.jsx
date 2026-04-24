@@ -39,6 +39,9 @@ import {
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { FaJava } from "react-icons/fa";
+import SplashScreen from "./SplashScreen";
+import { useState, useEffect, useRef } from "react";
+import gsap from "gsap";
 
 import project1 from "../images/ivanani_web.png";
 import project2 from "../images/task-manager.png";
@@ -61,6 +64,19 @@ import ContactSection from "./sections/ContactSection";
 import Navbar from "./sections/NavBar";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  const appRef = useRef(null);
+
+  useEffect(() => {
+    if (!loading && appRef.current) {
+      gsap.to(appRef.current, {
+        opacity: 1,
+        duration: 1,
+        ease: "power2.out",
+      });
+    }
+  }, [loading]);
+
   const techSkills = [
     {
       name: "HTML",
@@ -451,56 +467,61 @@ function App() {
   };
 
   return (
-    <div className="bg-gray-900 text-white min-h-screen">
-      <Navbar />
+    <>
+      {<SplashScreen onFinish={() => setLoading(false)} />}
+      <div ref={appRef} style={{ opacity: 0 }} className="bg-gray-900">
+        <div className="bg-gray-900 text-white min-h-screen">
+          <Navbar />
 
-      <HeroSection scrollToSection={scrollToSection} />
+          <HeroSection scrollToSection={scrollToSection} />
 
-      <AboutSection />
+          <AboutSection />
 
-      <SkillsSection
-        techSkills={techSkills}
-        softSkills={softSkills}
-        learningSkills={learningSkills}
-      />
+          <SkillsSection
+            techSkills={techSkills}
+            softSkills={softSkills}
+            learningSkills={learningSkills}
+          />
 
-      <ProjectsSection projects={projects} />
+          <ProjectsSection projects={projects} />
 
-      <ContactSection />
+          <ContactSection />
 
-      {/* Footer */}
-      <footer className="bg-gray-900 py-8 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-400 mb-4">
-            © 2025 Nelicah. Todos los derechos reservados.
-          </p>
-          <div className="flex justify-center space-x-6">
-            <a
-              href="https://www.github.com/Nelicah"
-              className="text-gray-400 hover:text-white transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Github size={24} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/cande-zamora-125301349"
-              className="text-gray-400 hover:text-white transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Linkedin size={24} />
-            </a>
-            <a
-              href="mailto:candezmr2@gmail.com"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <Mail size={24} />
-            </a>
-          </div>
+          {/* Footer */}
+          <footer className="bg-gray-900 py-8 px-4">
+            <div className="max-w-6xl mx-auto text-center">
+              <p className="text-gray-400 mb-4">
+                © 2025 Nelicah. Todos los derechos reservados.
+              </p>
+              <div className="flex justify-center space-x-6">
+                <a
+                  href="https://www.github.com/Nelicah"
+                  className="text-gray-400 hover:text-white transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github size={24} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/cande-zamora-125301349"
+                  className="text-gray-400 hover:text-white transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin size={24} />
+                </a>
+                <a
+                  href="mailto:candezmr2@gmail.com"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  <Mail size={24} />
+                </a>
+              </div>
+            </div>
+          </footer>
         </div>
-      </footer>
-    </div>
+      </div>
+    </>
   );
 }
 

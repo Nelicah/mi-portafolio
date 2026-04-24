@@ -1,7 +1,24 @@
 import { ChevronDown } from "lucide-react";
 import logo from "../../images/mi-logo.png";
+import Typed from "typed.js";
+import { useRef, useEffect } from "react";
 
 function HeroSection({ scrollToSection }) {
+  const typedRef = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(typedRef.current, {
+      strings: ["Developer"],
+      typeSpeed: 80,
+      backSpeed: 50,
+      loop: true,
+      showCursor: true,
+      cursorChar: "|",
+    });
+
+    return () => typed.destroy();
+  }, []);
+
   return (
     <>
       <section
@@ -20,16 +37,17 @@ function HeroSection({ scrollToSection }) {
               <img
                 src={logo}
                 alt="Logo personal"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-lg"
               />
             </div>
           </div>
           <h2 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              Desarrolladora
-            </span>
+            <span>Full Stack</span>
             <br />
-            <span className="text-white">Full Stack</span>
+            <span
+              ref={typedRef}
+              className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
+            ></span>
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
             <button
