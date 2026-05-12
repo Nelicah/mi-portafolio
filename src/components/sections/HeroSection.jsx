@@ -31,7 +31,7 @@ function HeroSection({ scrollToSection }) {
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
 
-        <div className="text-center z-10 px-4">
+        <div className="text-center z-10 px-4 w-full">
           <div className="mb-8">
             <div className="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl font-bold">
               <img
@@ -49,7 +49,7 @@ function HeroSection({ scrollToSection }) {
               className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
             ></span>
           </h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
             <button
               onClick={() => scrollToSection("proyectos")}
               className="bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
