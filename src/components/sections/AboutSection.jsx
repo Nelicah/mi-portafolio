@@ -1,7 +1,16 @@
 import { User } from "lucide-react";
 import foto from "../../images/foto-pixel.png";
+import { useEffect } from "react";
 
 function AboutSection() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "//cdn.credly.com/assets/utilities/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => document.body.removeChild(script);
+  }, []);
+
   return (
     <>
       <section id="sobre-mí" className="py-20 px-4">
@@ -43,13 +52,21 @@ function AboutSection() {
                   </span>
 
                   <span className="inline-flex items-center gap-2 border border-yellow-500 text-yellow-400 rounded-full px-3 py-1 text-sm">
-                    {/* punto animado */}
                     <span className="relative flex w-2 h-2">
                       <span className="animate-ping absolute inset-0 rounded-full bg-yellow-400 opacity-75"></span>
                       <span className="relative w-2 h-2 rounded-full bg-yellow-400"></span>
                     </span>
                     Estudiando AWS Cloud Practitioner
                   </span>
+
+                  <div className="mt-2 flex justify-center">
+                    <div
+                      data-iframe-width="150"
+                      data-iframe-height="270"
+                      data-share-badge-id="5161eed9-1c49-48fa-beee-6c42aca71399"
+                      data-share-badge-host="https://www.credly.com"
+                    ></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -62,6 +79,11 @@ function AboutSection() {
                 <p className="text-gray-300 mb-4 leading-relaxed">
                   Full Stack Developer con +6 años de experiencia en atención al
                   cliente, cumpliendo el sueño de dedicarme al desarrollo web.
+                  Formada en un CFGS de Agencia de Viajes — lo más cercano a la
+                  tecnología que encontré en su momento, porque la brecha de
+                  género en el sector tech era una realidad. <br />
+                  Llevo un año programando y no he parado: cada proyecto, cada
+                  bug y cada nueva tecnología me confirman que esto es lo mío.
                   Busco un equipo donde aportar código limpio, buenas prácticas
                   y seguir creciendo.
                 </p>
