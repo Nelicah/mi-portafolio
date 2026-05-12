@@ -76,7 +76,7 @@ function SkillsSection({ techSkills, softSkills, learningSkills }) {
             <p className="text-gray-400 text-sm mb-8">Próximas tecnologías en mi stack</p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-20">
+          <div className="flex flex-wrap justify-center gap-4 mb-20 max-w-2xl mx-auto">
             {learningSkills.map((skill, index) => {
               const Icon = skill.icon;
               return (

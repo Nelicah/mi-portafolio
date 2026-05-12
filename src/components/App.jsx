@@ -36,6 +36,7 @@ import {
   SiXampp,
   SiApache,
   SiVite,
+  SiRedux,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { FaJava } from "react-icons/fa";
@@ -250,6 +251,7 @@ function App() {
 
   const learningSkills = [
     { name: "React Native", icon: SiReact, color: "text-cyan-400" },
+    { name: "Redux", icon: SiRedux, color: "text-purple-500" },
     { name: "Python", icon: SiPython, color: "text-[#3776AB]" },
     { name: "MongoDB", icon: SiMongodb, color: "text-green-500" },
     { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-300" },
