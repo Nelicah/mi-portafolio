@@ -7,6 +7,7 @@ import {
   Github,
   Link,
   ExternalLink,
+  BookOpen,
 } from "lucide-react";
 
 function ProjectsSection({ projects }) {
@@ -157,6 +158,17 @@ function ProjectsSection({ projects }) {
                   >
                     <Link size={16} />
                     Web de la empresa
+                  </a>
+                )}
+                {proyectoSeleccionado.docs && (
+                  <a
+                    href={proyectoSeleccionado.docs}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+                  >
+                    <BookOpen size={16} />
+                    Documentación
                   </a>
                 )}
               </div>

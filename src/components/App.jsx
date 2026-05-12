@@ -56,6 +56,7 @@ import project9 from "../images/dragon-ball1.png";
 import project10 from "../images/proyecto-molon2.png";
 import project11 from "../images/catalogo_peliculas.png";
 import project12 from "../images/login_nutrium.png";
+import project13 from "../images/proyecto_AWS.png";
 
 import HeroSection from "./sections/HeroSection";
 import AboutSection from "./sections/AboutSection";
@@ -83,21 +84,24 @@ function App() {
       name: "HTML",
       icon: SiHtml5,
       color: "text-orange-500",
-      description: "Etiquetas semánticas y componentes variados, no siempre div",
+      description:
+        "Etiquetas semánticas y componentes variados, no siempre div",
       category: "frontend",
     },
     {
       name: "CSS",
       icon: SiCss3,
       color: "text-blue-400",
-      description: "Layouts responsive, Flexbox, Grid, animaciones y diseño puro",
+      description:
+        "Layouts responsive, Flexbox, Grid, animaciones y diseño puro",
       category: "frontend",
     },
     {
       name: "Tailwind CSS",
       icon: SiTailwindcss,
       color: "text-cyan-400",
-      description: "Utility-first, diseño responsive rápido y componentes personalizados",
+      description:
+        "Utility-first, diseño responsive rápido y componentes personalizados",
       category: "frontend",
     },
     {
@@ -111,28 +115,32 @@ function App() {
       name: "React",
       icon: SiReact,
       color: "text-cyan-400",
-      description: "Componentes reutilizables, hooks, gestión de estado y rutas",
+      description:
+        "Componentes reutilizables, hooks, gestión de estado y rutas",
       category: "frontend",
     },
     {
       name: "SASS",
       icon: SiSass,
       color: "text-pink-400",
-      description: "Variables, mixins, nesting y arquitectura modular de estilos",
+      description:
+        "Variables, mixins, nesting y arquitectura modular de estilos",
       category: "frontend",
     },
     {
       name: "TypeScript",
       icon: SiTypescript,
       color: "text-blue-500",
-      description: "Tipado estático, interfaces y código más robusto y mantenible",
+      description:
+        "Tipado estático, interfaces y código más robusto y mantenible",
       category: "frontend",
     },
     {
       name: "GSAP",
       icon: SiGreensock,
       color: "text-green-400",
-      description: "Animaciones fluidas, transiciones interactivas y ScrollTrigger",
+      description:
+        "Animaciones fluidas, transiciones interactivas y ScrollTrigger",
       category: "frontend",
     },
     {
@@ -153,7 +161,8 @@ function App() {
       name: "PHP",
       icon: SiPhp,
       color: "text-purple-400",
-      description: "POO, principios SOLID, conexión a base de datos y lógica del servidor",
+      description:
+        "POO, principios SOLID, conexión a base de datos y lógica del servidor",
       category: "backend",
     },
     {
@@ -167,14 +176,16 @@ function App() {
       name: "SQL",
       icon: SiMysql,
       color: "text-blue-500",
-      description: "Consultas, joins, CRUD y diseño de bases de datos relacionales. Experiencia con MySQL",
+      description:
+        "Consultas, joins, CRUD y diseño de bases de datos relacionales. Experiencia con MySQL",
       category: "backend",
     },
     {
       name: "Git",
       icon: SiGit,
       color: "text-red-500",
-      description: "Control de versiones, ramas, merge y resolución de conflictos",
+      description:
+        "Control de versiones, ramas, merge y resolución de conflictos",
       category: "herramientas",
     },
     {
@@ -188,7 +199,8 @@ function App() {
       name: "VS Code",
       icon: VscVscode,
       color: "text-blue-400",
-      description: "Editor principal con extensiones, snippets y atajos personalizados",
+      description:
+        "Editor principal con extensiones, snippets y atajos personalizados",
       category: "herramientas",
     },
     {
@@ -209,7 +221,8 @@ function App() {
       name: "Vite",
       icon: SiVite,
       color: "text-purple-400",
-      description: "Bundler rápido para proyectos React con HMR y build optimizado",
+      description:
+        "Bundler rápido para proyectos React con HMR y build optimizado",
       category: "herramientas",
     },
     {
@@ -230,7 +243,8 @@ function App() {
       name: "Terminal",
       icon: SiGnometerminal,
       color: "text-green-300",
-      description: "Línea de comandos para gestión de proyectos y automatización",
+      description:
+        "Línea de comandos para gestión de proyectos y automatización",
       category: "herramientas",
     },
     {
@@ -340,6 +354,15 @@ function App() {
       ],
       github: "https://github.com/Nelicah/task-manager",
       demo: "https://task-manager-mogt.onrender.com/",
+    },
+    {
+      title: "Ingesta y análisis de datos de encuesta en AWS (en grupo)",
+      description:
+        "Pipeline de datos end-to-end desplegado en AWS para la ingesta y análisis de respuestas de encuestas. Formulario web servido desde EC2 (Apache + PHP) con acceso gestionado mediante IAM roles. Las respuestas se almacenan automáticamente en S3 como data lake. Un Glue Crawler cataloga el esquema de los datos de forma automática, permitiendo consultarlos directamente con Athena mediante SQL serverless sin necesidad de base de datos tradicional.",
+      image: project13,
+      tech: ["EC2", "Apache", "PHP", "IAM", "S3", "Glue", "Athena", "SQL"],
+      github: "https://github.com/16IMA/Consumer-Affinity-Research-AWS",
+      docs: "https://drive.google.com/file/d/1AlRSElekIjAnWeN_6Z8RJ5SRcd-O3GHv/view?usp=sharing",
     },
     {
       title: "Dragon Ball Universe",
