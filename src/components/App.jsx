@@ -51,12 +51,10 @@ import project4 from "../images/buscador-animes.png";
 import project5 from "../images/harry-potter.png";
 import project6 from "../images/the-simpsons-logo.png";
 import project7 from "../images/screenshot.png";
-import project8 from "../images/agenda_contactos1.png";
-import project9 from "../images/dragon-ball1.png";
-import project10 from "../images/proyecto-molon2.png";
-import project11 from "../images/catalogo_peliculas.png";
-import project12 from "../images/login_nutrium.png";
-import project13 from "../images/proyecto_AWS.png";
+import project8 from "../images/dragon-ball1.png";
+import project9 from "../images/proyecto-molon2.png";
+import project10 from "../images/login_nutrium.png";
+import project11 from "../images/proyecto_AWS.png";
 
 import HeroSection from "./sections/HeroSection";
 import AboutSection from "./sections/AboutSection";
@@ -321,7 +319,7 @@ function App() {
       title: "Nutrium Platform",
       description:
         "Plataforma HealthTech de matching con IA que conecta pacientes y nutricionistas. Frontend Developer trabajando con metodología Agile y Scrum en proyecto colaborativo. Autenticación JWT con Context API y custom hooks. Servicios HTTP centralizados (api.ts) para API REST (Node.js) y microservicio IA (FastAPI + OpenRouter). Gestión estado con Context API, localStorage, sessionStorage y React Router. Sistema fallback en cascada (IA → Backend → error). Perfiles duales con edición, formularios dinámicos, matching visual con porcentaje, verificación nutricionistas, notificaciones y gestión citas. Arquitectura escalable, mobile-first, Docker. Validado en Demo Day por Igrowker ISA.",
-      image: project12,
+      image: project10,
       tech: [
         "React",
         "TypeScript",
@@ -359,7 +357,7 @@ function App() {
       title: "Ingesta y análisis de datos de encuesta en AWS (en grupo)",
       description:
         "Pipeline de datos end-to-end desplegado en AWS para la ingesta y análisis de respuestas de encuestas. Formulario web servido desde EC2 (Apache + PHP) con acceso gestionado mediante IAM roles. Las respuestas se almacenan automáticamente en S3 como data lake. Un Glue Crawler cataloga el esquema de los datos de forma automática, permitiendo consultarlos directamente con Athena mediante SQL serverless sin necesidad de base de datos tradicional.",
-      image: project13,
+      image: project11,
       tech: ["EC2", "Apache", "PHP", "IAM", "S3", "Glue", "Athena", "SQL"],
       github: "https://github.com/16IMA/Consumer-Affinity-Research-AWS",
       docs: "https://drive.google.com/file/d/1AlRSElekIjAnWeN_6Z8RJ5SRcd-O3GHv/view?usp=sharing",
@@ -367,7 +365,7 @@ function App() {
     {
       title: "Dragon Ball Universe",
       description: `Aplicación React que consume API de Dragon Ball. Resolví el reto de normalizar valores de Ki en formatos mixtos ("5 Billion", "60.000.000") creando un parser que interpreta magnitudes en inglés y convierte formatos europeos. Implementé búsqueda instantánea, lazy loading de imágenes y arquitectura modular con componentes reutilizables.`,
-      image: project9,
+      image: project8,
       tech: [
         "React",
         "Tailwind CSS",
@@ -447,30 +445,13 @@ function App() {
       image: project7,
       tech: ["HTML", "CSS", "JavaScript", "Git"],
       github: "https://github.com/Nelicah/juego-piedra-papel-tijeras.git",
-      demo: "https://game-js.zeabur.app/",
-    },
-    {
-      title: "Agenda de contactos",
-      description:
-        "Aplicación React para gestión de contactos. Implementé búsqueda que normaliza tildes, sistema de favoritos con sincronización entre listas, y persistencia mediante Local Storage. Enfoque en componentización y separación de responsabilidades.",
-      image: project8,
-      tech: [
-        "React",
-        "Node.js",
-        "SASS",
-        "Vite",
-        "Local Storage",
-        "Git",
-        "GitHub",
-      ],
-      github: "https://github.com/Nelicah/agenda-de-contactos.git",
-      demo: "https://nelicah.github.io/agenda-de-contactos/",
+      demo: "https://nelicah.github.io/juego-piedra-papel-tijeras/",
     },
     {
       title: "Proyecto Molón 2.0 (en grupo)",
       description:
         "Aplicación web colaborativa para crear tarjetas personalizadas de proyectos. Desarrollada en equipo aplicando metodologías ágiles con separación entre frontend (React, SCSS) y backend (Node.js, Express, EJS). Permite diseñar tarjetas visuales con texto, imágenes y enlaces de forma dinámica.",
-      image: project10,
+      image: project9,
       tech: [
         "React",
         "SCSS",
@@ -484,15 +465,6 @@ function App() {
       ],
       github: "https://github.com/Nelicah/Proyecto-molon-2.0.git",
       demo: "https://proyecto-molon-2-0-sgwe.onrender.com/",
-    },
-    {
-      title: "Catálogo de Películas",
-      description:
-        "Proyecto de aprendizaje de TypeScript con búsqueda y filtrado. Implementé interfaces personalizadas, tipado fuerte, type assertions para manejo seguro del DOM, y optional chaining para acceso seguro a propiedades. Demuestra mi transición de JavaScript a TypeScript. En fase de mejora.",
-      image: project11,
-      tech: ["TypeScript", "HTML5", "Boostrap 5", "Git"],
-      github: "https://github.com/Nelicah/aprendiendo-typescript",
-      demo: "https://nelicah.github.io/aprendiendo-typescript/",
     },
   ];
 
