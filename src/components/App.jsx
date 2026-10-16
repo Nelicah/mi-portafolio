@@ -359,7 +359,7 @@ function App() {
         "Pipeline de datos end-to-end desplegado en AWS para la ingesta y análisis de respuestas de encuestas. Formulario web servido desde EC2 (Apache + PHP) con acceso gestionado mediante IAM roles. Las respuestas se almacenan automáticamente en S3 como data lake. Un Glue Crawler cataloga el esquema de los datos de forma automática, permitiendo consultarlos directamente con Athena mediante SQL serverless sin necesidad de base de datos tradicional.",
       image: project11,
       tech: ["EC2", "Apache", "PHP", "IAM", "S3", "Glue", "Athena", "SQL"],
-      github: "https://github.com/16IMA/Consumer-Affinity-Research-AWS",
+      github: "https://github.com/Nelicah/Consumer-Affinity-Research-AWS",
       docs: "https://drive.google.com/file/d/1AlRSElekIjAnWeN_6Z8RJ5SRcd-O3GHv/view?usp=sharing",
     },
     {
