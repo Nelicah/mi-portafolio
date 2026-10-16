@@ -58,6 +58,8 @@ import project11 from "../images/proyecto_AWS.png";
 
 import HeroSection from "./sections/HeroSection";
 import AboutSection from "./sections/AboutSection";
+import ExperienceSection from "./sections/ExperienceSection";
+import EducationSection from "./sections/EducationSection";
 import SkillsSection from "./sections/SkillsSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import ContactSection from "./sections/ContactSection";
@@ -270,6 +272,115 @@ function App() {
     { name: "Next.js", icon: SiNextdotjs, color: "text-white" },
   ];
 
+  const experience = [
+    {
+      role: "Desarrolladora Frontend Freelance",
+      company: "Ivanani — startup",
+      period: "oct 2025 - dic 2025",
+      location: "Remoto · Gestión directa de cliente",
+      highlights: [
+        "Sitio web desarrollado de forma autónoma: análisis de requisitos, desarrollo, comunicación con cliente y despliegue.",
+        "GSAP aprendido desde documentación oficial; animaciones avanzadas e interactivas.",
+        "Substack API y Google Sheets API para automatizar la gestión de suscriptores a newsletter.",
+      ],
+      tech: ["JavaScript ES6+", "HTML5", "CSS3", "GSAP", "APIs"],
+      links: {
+        web: "https://immersivecreatures.com/",
+        demo: "https://ivanani.com",
+      },
+    },
+    {
+      role: "Frontend Developer",
+      company: "Nutrium · Igrowker (proyecto colaborativo)",
+      period: "feb 2026 - mar 2026",
+      location: "Equipo con Backend, QA, UX/UI y PM",
+      highlights: [
+        "Plataforma de matching pacientes–nutricionistas.",
+        "Metodologías ágiles (Scrum); colaboración en integración de APIs.",
+        "Exposición a implementación de IA (OpenRouter) para matching; maquetación de alta fidelidad.",
+      ],
+      tech: [
+        "TypeScript",
+        "React",
+        "Tailwind CSS",
+        "React Router",
+        "Node.js",
+        "Docker",
+        "Git",
+        "GitHub",
+        "Figma",
+        "Notion",
+      ],
+      links: {
+        github: "https://github.com/Nelicah/nutrium",
+      },
+    },
+  ];
+
+  const education = [
+    {
+      title: "AWS re/Start Graduate",
+      institution: "Adalab",
+      period: "2026",
+      hours: "174 h",
+      detail:
+        "Programa intensivo de formación en cloud computing y prácticas DevOps",
+      servicios: [
+        "EC2",
+        "S3",
+        "Lambda",
+        "CloudFormation",
+        "IAM",
+        "CloudWatch",
+        "Athena",
+        "Glue",
+        "EBS",
+        "RDS",
+        "DynamoDB",
+        "DocumentDB",
+        "Aurora",
+        "Route 53",
+        "VPC",
+        "Trusted Advisor",
+      ],
+    },
+    {
+      title: "Bootcamp Full Stack Developer",
+      institution: "Adalab",
+      period: "2025",
+      hours: "255 h",
+      detail: null,
+      stack: [
+        "HTML",
+        "CSS",
+        "Sass",
+        "JavaScript",
+        "React",
+        "MySQL",
+        "Node.js",
+        "Express",
+        "Postman",
+        "Git",
+        "GitHub",
+        "Zeplin",
+      ],
+    },
+    {
+      title: "Aprendizaje autodidacta",
+      institution: "Udemy, Platzi, Youtube, etc.",
+      period: "2025 - actualidad",
+      detail: null,
+      stack: ["PHP", "GSAP", "TypeScript", "Docker"],
+    },
+    {
+      title: "CFGS Agencias de Viajes",
+      institution: "CIFP Virgen de Candelaria",
+      period: "2010",
+      hours: "2000 h",
+      detail: null,
+    },
+  ];
+
   const softSkills = [
     {
       name: "Trabajo en equipo",
@@ -312,7 +423,7 @@ function App() {
         "Google Sheets API",
         "XML",
       ],
-      demo: "https://ivananirobot.blogspot.com/p/blog-page_3.html",
+      demo: "https://ivanani.com",
       web: "https://immersivecreatures.com/",
     },
     {
@@ -485,6 +596,10 @@ function App() {
           <HeroSection scrollToSection={scrollToSection} />
 
           <AboutSection />
+
+          <ExperienceSection experience={experience} />
+
+          <EducationSection education={education} />
 
           <SkillsSection
             techSkills={techSkills}

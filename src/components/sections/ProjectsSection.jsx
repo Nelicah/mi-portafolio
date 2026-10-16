@@ -1,5 +1,5 @@
 import ProjectCard from "../items/ProjectCard";
-import { useState, useRef, useEffect, use } from "react";
+import { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import {
   ChevronLeft,
@@ -146,7 +146,7 @@ function ProjectsSection({ projects }) {
                     className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
                   >
                     <ExternalLink size={16} />
-                    Demo
+                    Link
                   </a>
                 )}
                 {proyectoSeleccionado.web && (

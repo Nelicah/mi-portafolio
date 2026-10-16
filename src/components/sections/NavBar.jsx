@@ -13,11 +13,13 @@ export default function Navbar() {
   }, []);
 
   const navItems = [
-    "Inicio",
-    "Sobre mí",
-    "Habilidades",
-    "Proyectos",
-    "Contacto",
+    { label: "Inicio", id: "inicio" },
+    { label: "Sobre mí", id: "sobre-mí" },
+    { label: "Experiencia", id: "experiencia" },
+    { label: "Formación", id: "formacion" },
+    { label: "Habilidades", id: "habilidades" },
+    { label: "Proyectos", id: "proyectos" },
+    { label: "Contacto", id: "contacto" },
   ];
 
   return (
@@ -36,13 +38,13 @@ export default function Navbar() {
 
         {/* Menú Desktop */}
         <div className="hidden md:flex space-x-8">
-          {navItems.map((item, index) => (
+          {navItems.map((item) => (
             <a
-              key={index}
-              href={`#${item.toLowerCase().replace(" ", "-")}`}
+              key={item.id}
+              href={`#${item.id}`}
               className="hover:text-blue-400 transition-colors cursor-pointer"
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </div>
@@ -60,14 +62,14 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-gray-900/95 backdrop-blur-sm shadow-lg">
           <div className="flex flex-col items-center space-y-6 py-6">
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <a
-                key={index}
-                href={`#${item.toLowerCase().replace(" ", "-")}`}
+                key={item.id}
+                href={`#${item.id}`}
                 className="hover:text-blue-400 transition-colors cursor-pointer"
-                onClick={() => setIsOpen(false)} // cierra el menú al hacer clic
+                onClick={() => setIsOpen(false)}
               >
-                {item}
+                {item.label}
               </a>
             ))}
           </div>
