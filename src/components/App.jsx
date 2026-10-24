@@ -38,6 +38,12 @@ import {
   SiVite,
   SiRedux,
 } from "react-icons/si";
+import {
+  TbHierarchy2,
+  TbClipboardCheck,
+  TbFileCode,
+  TbBrowser,
+} from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
 import { FaJava } from "react-icons/fa";
 import SplashScreen from "./SplashScreen";
@@ -55,6 +61,7 @@ import project8 from "../images/dragon-ball1.png";
 import project9 from "../images/proyecto-molon2.png";
 import project10 from "../images/login_nutrium.png";
 import project11 from "../images/proyecto_AWS.png";
+import project12 from "../images/saucedemo-qa.png";
 
 import HeroSection from "./sections/HeroSection";
 import AboutSection from "./sections/AboutSection";
@@ -237,7 +244,7 @@ function App() {
       icon: SiJest,
       color: "text-red-400",
       description: "Testing unitario y de integración para JavaScript y React",
-      category: "herramientas",
+      category: "testing & qa",
     },
     {
       name: "Terminal",
@@ -260,6 +267,38 @@ function App() {
       color: "text-red-500",
       description: "Servidor web para despliegue y configuración de proyectos",
       category: "herramientas",
+    },
+    {
+      name: "Playwright",
+      icon: TbBrowser,
+      color: "text-green-500",
+      description:
+        "Automatización E2E, simulación de navegadores y flujos de usuario completos",
+      category: "testing & qa",
+    },
+    {
+      name: "Page Object Model",
+      icon: TbHierarchy2,
+      color: "text-blue-400",
+      description:
+        "Arquitectura limpia en automatización desacoplando la UI de la lógica de tests",
+      category: "testing & qa",
+    },
+    {
+      name: "BDD / Gherkin",
+      icon: TbFileCode, // Icono genérico de archivo de código/especificación
+      color: "text-emerald-400",
+      description:
+        "Diseño de escenarios de prueba legibles mediante sintaxis «Dado / Cuando / Entonces»",
+      category: "testing & qa",
+    },
+    {
+      name: "QA Manual",
+      icon: TbClipboardCheck,
+      color: "text-purple-400",
+      description:
+        "Planificación de tests, matrices de usuario y reporte estructurado de bugs",
+      category: "testing & qa",
     },
   ];
 
@@ -443,6 +482,21 @@ function App() {
         "GitHub",
       ],
       github: "https://github.com/Nelicah/nutrium",
+    },
+    {
+      title: "SauceDemo QA",
+      description:
+        "Framework de automatización E2E y aseguramiento de la calidad desarrollado para SauceDemo. Implementa pruebas automatizadas robustas con Playwright, diseño modular basado en el patrón Page Object Model (POM), especificación de escenarios mediante sintaxis BDD (Dado-Cuando-Entonces) y un enfoque estructurado de QA manual y reporte de incidencias.",
+      image: project12,
+      tech: [
+        "Playwright",
+        "TypeScript",
+        "Page Object Model (POM)",
+        "Gherkin/BDD",
+        "Git",
+        "GitHub",
+      ],
+      github: "https://github.com/Nelicah/saucedemo-qa",
     },
     {
       title: "Task Manager",

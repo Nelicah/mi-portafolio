@@ -7,6 +7,7 @@ const TABS = [
   { key: "frontend", label: "Frontend" },
   { key: "backend", label: "Backend" },
   { key: "herramientas", label: "Herramientas" },
+  { key: "testing & qa", label: "Testing & QA" },
 ];
 
 function SkillsSection({ techSkills, softSkills, learningSkills }) {
@@ -18,7 +19,7 @@ function SkillsSection({ techSkills, softSkills, learningSkills }) {
     gsap.fromTo(
       gridRef.current,
       { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }
+      { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" },
     );
     setTabActiva(nuevaTab);
   };
@@ -37,7 +38,9 @@ function SkillsSection({ techSkills, softSkills, learningSkills }) {
               </span>
             </h2>
             <p className="text-gray-400 text-lg">Tecnologías que domino</p>
-            <p className="text-gray-500 text-sm mt-2">Toca las tarjetas para descubrir más</p>
+            <p className="text-gray-500 text-sm mt-2">
+              Toca las tarjetas para descubrir más
+            </p>
           </div>
 
           <div className="flex justify-center gap-2 mb-10">
@@ -73,7 +76,9 @@ function SkillsSection({ techSkills, softSkills, learningSkills }) {
                 Aprendiendo
               </span>
             </h3>
-            <p className="text-gray-400 text-sm mb-8">Próximas tecnologías en mi stack</p>
+            <p className="text-gray-400 text-sm mb-8">
+              Próximas tecnologías en mi stack
+            </p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 mb-20 max-w-2xl mx-auto">
@@ -89,7 +94,9 @@ function SkillsSection({ techSkills, softSkills, learningSkills }) {
                     <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-400"></span>
                   </span>
                   <Icon size={24} className={skill.color} />
-                  <span className="text-gray-200 font-medium text-sm">{skill.name}</span>
+                  <span className="text-gray-200 font-medium text-sm">
+                    {skill.name}
+                  </span>
                 </div>
               );
             })}

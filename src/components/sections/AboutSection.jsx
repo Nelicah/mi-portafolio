@@ -79,13 +79,15 @@ function AboutSection() {
                 <p className="text-gray-300 mb-4 leading-relaxed">
                   Full Stack Developer con +6 años de experiencia en atención al
                   cliente, cumpliendo el sueño de dedicarme al desarrollo web.
+                  <br />
                   Formada en un CFGS de Agencia de Viajes — lo más cercano a la
                   tecnología que encontré en su momento, porque la brecha de
                   género en el sector tech era una realidad. <br />
                   Llevo un año programando y no he parado: cada proyecto, cada
                   bug y cada nueva tecnología me confirman que esto es lo mío.
-                  Busco un equipo donde aportar código limpio, buenas prácticas
-                  y seguir creciendo.
+                  <br />
+                  Pasión por construir aplicaciones web robustas, escalables y
+                  testeadas de extremo a extremo con automatización QA.
                 </p>
               </div>
             </div>
