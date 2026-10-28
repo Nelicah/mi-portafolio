@@ -51,13 +51,13 @@ function AboutSection() {
                     Open to work · Disponibilidad inmediata
                   </span>
 
-                  <span className="inline-flex items-center gap-2 border border-yellow-500 text-yellow-400 rounded-full px-3 py-1 text-sm">
+                  {/* <span className="inline-flex items-center gap-2 border border-yellow-500 text-yellow-400 rounded-full px-3 py-1 text-sm">
                     <span className="relative flex w-2 h-2">
                       <span className="animate-ping absolute inset-0 rounded-full bg-yellow-400 opacity-75"></span>
                       <span className="relative w-2 h-2 rounded-full bg-yellow-400"></span>
                     </span>
                     Estudiando AWS Cloud Practitioner
-                  </span>
+                  </span> */}
 
                   <div className="mt-2 flex justify-center">
                     <div
